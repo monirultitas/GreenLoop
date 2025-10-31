@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { MenuIcon, XIcon } from './icons';
@@ -25,7 +26,9 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold text-white">GreenLoop</span>
+            <span className="text-2xl font-bold">
+              <span className="text-green-accent">Green</span><span className="text-blue-light">Loop</span>
+            </span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (

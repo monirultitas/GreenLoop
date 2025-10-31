@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 const GetInvolved: React.FC = () => {
@@ -30,7 +31,7 @@ const GetInvolved: React.FC = () => {
       <header className="bg-green-primary py-16 text-white text-center">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold">Get Involved</h1>
-          <p className="mt-2 text-xl">Be a part of the solution. Join the GreenLoop movement.</p>
+          <p className="mt-2 text-xl">Be a part of the solution. Join the <span className="font-semibold"><span className="text-green-accent">Green</span><span className="text-blue-light">Loop</span></span> movement.</p>
         </div>
       </header>
 
@@ -40,11 +41,11 @@ const GetInvolved: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-6 border border-gray-200 rounded-lg">
               <h3 className="text-2xl font-bold text-green-dark mb-3">For Schools & Universities</h3>
-              <p className="text-gray-700">Partner with GreenLoop to bring our innovative recycling program to your campus. Contact us to schedule a presentation and pilot project.</p>
+              <p className="text-gray-700">Partner with <span className="font-semibold"><span className="text-green-primary">Green</span><span className="text-blue-primary">Loop</span></span> to bring our innovative recycling program to your campus. Contact us to schedule a presentation and pilot project.</p>
             </div>
             <div className="p-6 border border-gray-200 rounded-lg">
               <h3 className="text-2xl font-bold text-green-dark mb-3">For Students</h3>
-              <p className="text-gray-700">Want to start a GreenLoop chapter at your school? Get in touch, and we'll help you get started!</p>
+              <p className="text-gray-700">Want to start a <span className="font-semibold"><span className="text-green-primary">Green</span><span className="text-blue-primary">Loop</span></span> chapter at your school? Get in touch, and we'll help you get started!</p>
             </div>
             <div className="p-6 border border-gray-200 rounded-lg">
               <h3 className="text-2xl font-bold text-green-dark mb-3">For Sponsors & Volunteers</h3>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const values = [
@@ -20,7 +21,7 @@ const About: React.FC = () => {
     <div className="animate-fadeIn">
       <header className="bg-green-primary py-16 text-white text-center">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold">About GreenLoop</h1>
+          <h1 className="text-4xl font-bold">About <span className="text-green-accent">Green</span><span className="text-blue-light">Loop</span></h1>
           <p className="mt-2 text-xl">Connecting communities for a cleaner tomorrow.</p>
         </div>
       </header>
@@ -31,7 +32,7 @@ const About: React.FC = () => {
           <div>
             <h2 className="text-3xl font-bold text-green-dark mb-4">Our Story</h2>
             <p className="text-gray-700 mb-4">
-              Inspired by the urgent need for local solutions to plastic pollution in Bangladesh, GreenLoop was founded to empower the next generation. We believe in action, education, and creating tangible change from the ground up.
+              Inspired by the urgent need for local solutions to plastic pollution in Bangladesh, <span className="font-semibold"><span className="text-green-primary">Green</span><span className="text-blue-primary">Loop</span></span> was founded to empower the next generation. We believe in action, education, and creating tangible change from the ground up.
             </p>
             <p className="text-gray-700">
               We envisioned a closed-loop system where students are not just participants, but leaders in the recycling process. By bringing the technology directly to schools with our mobile plastic plants, we're making recycling accessible, educational, and impactful.

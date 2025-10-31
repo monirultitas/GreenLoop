@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { RecycleIcon } from '../components/icons';
@@ -10,7 +11,7 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50" />
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-            Join the GreenLoop:
+            Join the <span className="text-green-light">Green</span><span className="text-blue-light">Loop</span>
             <span className="block text-lg md:text-3xl font-semibold mt-1">Your Plastic, Our Purpose.</span>
           </h1>
           <p className="text-lg md:text-2xl mb-8 max-w-3xl">
@@ -39,9 +40,9 @@ const Home: React.FC = () => {
       <section className="py-16 md:py-24 bg-neutral-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-green-dark">Our Solution: The GreenLoop Model</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-green-dark">Our Solution: The <span className="text-green-primary">Green</span><span className="text-blue-primary">Loop</span> Model</h2>
             <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto">
-              GreenLoop is a community-based, student-led initiative. We empower students to collect plastic, which we then transform into useful items right on their campus using mobile recycling technology.
+              <span className="font-semibold"><span className="text-green-primary">Green</span><span className="text-blue-primary">Loop</span></span> is a community-based, student-led initiative. We empower students to collect plastic, which we then transform into useful items right on their campus using mobile recycling technology.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 text-center">

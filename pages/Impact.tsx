@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const products = [
@@ -29,7 +30,7 @@ const Impact: React.FC = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-green-dark mb-4">More Than Just Recycling</h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            GreenLoop isn't just recycling plastic; we're cultivating a generation of environmentally conscious leaders. We turn waste into value, demonstrating the power of community action.
+            <span className="font-semibold"><span className="text-green-primary">Green</span><span className="text-blue-primary">Loop</span></span> isn't just recycling plastic; we're cultivating a generation of environmentally conscious leaders. We turn waste into value, demonstrating the power of community action.
           </p>
         </div>
       </section>
@@ -84,7 +85,21 @@ const Impact: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-neutral-light p-8 rounded-lg">
-                <p className="text-gray-700 italic text-lg mb-4">"{testimonial.quote}"</p>
+                <p className="text-gray-700 italic text-lg mb-4">
+                  "
+                  {testimonial.quote.split('GreenLoop').map((part, i, arr) => (
+                    <React.Fragment key={i}>
+                      {part}
+                      {i < arr.length - 1 && (
+                        <span className="font-semibold not-italic">
+                          <span className="text-green-primary">Green</span>
+                          <span className="text-blue-primary">Loop</span>
+                        </span>
+                      )}
+                    </React.Fragment>
+                  ))}
+                  "
+                </p>
                 <p className="font-bold text-green-primary">{testimonial.author}</p>
                 <p className="text-gray-600">{testimonial.school}</p>
               </div>

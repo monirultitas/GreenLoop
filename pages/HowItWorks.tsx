@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const processSteps = [
@@ -44,7 +45,7 @@ const HowItWorks: React.FC = () => {
     <div className="animate-fadeIn">
       <header className="bg-green-primary py-16 text-white text-center">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold">How GreenLoop Works</h1>
+          <h1 className="text-4xl font-bold">How <span className="text-green-accent">Green</span><span className="text-blue-light">Loop</span> Works</h1>
           <p className="mt-2 text-xl">A simple process for a powerful impact.</p>
         </div>
       </header>

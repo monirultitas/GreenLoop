@@ -11,7 +11,9 @@ const Footer: React.FC = () => {
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <RecycleIcon className="h-8 w-8 text-green-accent" />
-              <span className="text-2xl font-bold">GreenLoop</span>
+              <span className="text-2xl font-bold">
+                <span className="text-green-accent">Green</span><span className="text-blue-light">Loop</span>
+              </span>
             </Link>
             <p className="text-gray-300">
               Empowering communities to create a sustainable future, one plastic bottle at a time.
@@ -44,7 +46,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} GreenLoop. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} <span className="font-semibold"><span className="text-green-accent">Green</span><span className="text-blue-light">Loop</span></span>. All rights reserved.</p>
         </div>
       </div>
     </footer>
