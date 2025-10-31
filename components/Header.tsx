@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { RecycleIcon, MenuIcon, XIcon } from './icons';
+import { MenuIcon, XIcon } from './icons';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -25,8 +24,7 @@ const Header: React.FC = () => {
     <header className="bg-green-dark shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center space-x-2">
-            <RecycleIcon className="h-8 w-8 text-green-accent" />
+          <Link to="/" className="flex items-center">
             <span className="text-2xl font-bold text-white">GreenLoop</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8">

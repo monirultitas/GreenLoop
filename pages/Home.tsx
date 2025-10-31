@@ -10,7 +10,8 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50" />
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-            Join the GreenLoop: Your Plastic, Our Purpose.
+            Join the GreenLoop:
+            <span className="block text-lg md:text-3xl font-semibold mt-1">Your Plastic, Our Purpose.</span>
           </h1>
           <p className="text-lg md:text-2xl mb-8 max-w-3xl">
             Empowering Bangladesh's youth to transform plastic waste into a sustainable future, one school at a time.
